@@ -52,7 +52,7 @@ export const {updateResult, changeFile} = predictionSlice.actions;
 //     data => data?.score && data.score > 0.05,
 //   );
 export const predictionResultSelector = state =>
-  state.prediction.predictionResults?.slice(0, 5);
+  state.prediction.predictionResults?.slice?.(0, 5) || [];
 export const selectStatus = state => state.prediction.status;
 export const fileSelector = state => state.prediction.file;
 

@@ -8,7 +8,7 @@ const predict = async ({data, type}) => {
   const config = {
     method: 'post',
     // url: 'https://handwrittendigitdetection.azurewebsites.net/predict',
-    url: 'http://3.0.182.150/predict',
+    url: 'http://13.250.40.247/predict',
     headers: {
       'Content-Type': 'multipart/form-data',
     },
